@@ -3,7 +3,42 @@
   {% include head.html %}
   <body>
     <main>
-      {% include header.html %} {% include bio.html %}
+      <header>
+        <a 
+        id="hdr" 
+        class="site-title"
+        href="{{site.baseurl}}/"
+        style="font-style: italic;"
+        >_</a>
+      </header>
+      <script>
+        text = "don't panic!";
+        displayText = "";
+        i = 0
+        var loop = setInterval(function(){
+          if(i === text.length) {
+            i = 0
+            displayText = ""
+          }
+          if(i === text.length-1) {
+            clearInterval(loop)
+          }
+          displayText += text.charAt(i)
+          document.getElementById('hdr').innerText = displayText;
+          document.getElementById('hdr').style.color = getRandomColor();
+          i++
+        }, 400)
+
+        function getRandomColor() {
+          var letters = '0123456789ABCDEF';
+          var color = '#';
+          for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+          }
+          return color;
+        }
+      </script>
+       {% include bio.html %}
       <section class="articles">
         {% for post in site.posts %}
         <article class="article">

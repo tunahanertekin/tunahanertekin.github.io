@@ -1,23 +1,32 @@
-name: Sharad Raj
-dp: https://avatars2.githubusercontent.com/u/36638057?s=460&u=0cbe4fd6b5a3655d91b3eb86db834d0829a0c086&v=4
+name: Tunahan Ertekin
+dp: https://lh3.googleusercontent.com/a-/AOh14Ghf3_yK0321QtWTfUxzTrSRV6Ig4WOBFsHlhz8vvxk=s288-p-no
 description: "
   <p>
-    Developed by Sharad Raj who lives in India building useful things for the world.
+    hey, i'm tunahan.
+  </p>
+  <br/>
+  
+  <p>
+    i work as a software engineer at <a href='https://www.linkedin.com/company/robolaunch/' target='_blank'>robolaunch</a> :rocket:.
+  </p>
+  <br/>
+  
+  <p>
+    working on cloud native applications written in go. mostly working with linux, kubernetes and docker. 
   </p>
   <br/>
   <p>
-    You should follow him on <a href='https://github.com/sharadcodes' target='_blank'>Github</a>
+    living in ankara, turkey. love all kinds of cheese.
   </P>
+
 "
-email: dev_sharad@outlook.com
+
 contact:
-  - title: linkedin
-    url: https://www.linkedin.com/in/srsmaurya
   - title: github
-    url: https://github.com/sharadcodes
+    url: https://github.com/tunahanertekin
+  - title: linkedin
+    url: https://www.linkedin.com/in/tunahan-ertekin-3a5476181
   - title: twitter
-    url: https://twitter.com/sharadcodes
-  - title: dev
-    url: https://dev.to/sharadcodes
+    url: https://twitter.com/tunomeister
   - title: email
-    url: mailto:dev_sharad@outlook.com
+    url: mailto:tunahan.ertekin13@gmail.com

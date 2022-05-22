@@ -1,12 +1,11 @@
-title: Jekyll Serial Programmer
+title: tunahan ertekin 
 markdown: kramdown
 url: ""
-baseurl: "/jekyll-theme-serial-programmer"
+baseurl: ""
 
-# for atom feed
 author:
-  name: Sharad Raj Singh Maurya
-  email: dev_sharad@outlook.com
+  name: tunahan ertekin
+  email: tunahan.ertekin13@gmail.com
 
 plugins:
   - jemoji
