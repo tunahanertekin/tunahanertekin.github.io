@@ -2,62 +2,70 @@
 <html lang="en">
   {% include head.html %}
   <body>
-    <main>
-      <header>
-        <a 
-        id="hdr" 
-        class="site-title"
-        href="{{site.baseurl}}/"
-        style="font-style: italic;"
-        >_</a>
-      </header>
-      <script>
-        text = "don't panic!";
-        displayText = "";
-        i = 0
-        var loop = setInterval(function(){
-          if(i === text.length) {
-            i = 0
-            displayText = ""
+    <div class="flex-container">
+      <main>
+        
+      </main>
+      <main>
+        <header>
+          <a 
+          id="hdr" 
+          class="site-title"
+          href="{{site.baseurl}}/"
+          style="font-style: italic;"
+          >_</a>
+        </header>
+        <script>
+          text = "don't panic!";
+          displayText = "";
+          i = 0
+          var loop = setInterval(function(){
+            if(i === text.length) {
+              i = 0
+              displayText = ""
+            }
+            if(i === text.length-1) {
+              clearInterval(loop)
+            }
+            displayText += text.charAt(i)
+            document.getElementById('hdr').innerText = displayText;
+            document.getElementById('hdr').style.color = getRandomColor();
+            i++
+          }, 400)
+  
+          function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+              color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
           }
-          if(i === text.length-1) {
-            clearInterval(loop)
-          }
-          displayText += text.charAt(i)
-          document.getElementById('hdr').innerText = displayText;
-          document.getElementById('hdr').style.color = getRandomColor();
-          i++
-        }, 400)
-
-        function getRandomColor() {
-          var letters = '0123456789ABCDEF';
-          var color = '#';
-          for (var i = 0; i < 6; i++) {
-            color += letters[Math.floor(Math.random() * 16)];
-          }
-          return color;
-        }
-      </script>
-       {% include bio.html %}
-      <section class="articles">
-        {% for post in site.posts %}
-        <article class="article">
-          <h2 class="article-title">
-            <a href="{{site.baseurl}}{{post.url}}"> {{post.title}} </a>
-          </h2>
-          <small class="date">{{post.date | date_to_string}}</small>
-          <div class="categories">
-            {% for c in post.categories %}
-            <a href="#!" data-base-url="{{site.baseurl}}" class="category"
-              >{{c}}</a
-            >
-            {% endfor %}
-          </div>
-        </article>
-        {%endfor%}
-      </section>
-      {% include footer.html %}
-    </main>
+        </script>
+         {% include bio.html %}
+        <section class="articles">
+          {% for post in site.posts %}
+          <article class="article">
+            <h2 class="article-title">
+              <a href="{{site.baseurl}}{{post.url}}"> {{post.title}} </a>
+            </h2>
+            <small class="date">{{post.date | date_to_string}}</small>
+            <div class="categories">
+              {% for c in post.categories %}
+              <a href="#!" data-base-url="{{site.baseurl}}" class="category"
+                >{{c}}</a
+              >
+              {% endfor %}
+            </div>
+          </article>
+          {%endfor%}
+        </section>
+        {% include footer.html %}
+      </main>
+      <main>
+        
+      </main>
+    </div>
     {% include category-modal.html%}
   </body>
 </html>
