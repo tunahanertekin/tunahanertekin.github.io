@@ -7,7 +7,7 @@ description: "
   <br/>
   
   <p>
-    i work as a software engineer at <a href='https://www.linkedin.com/company/robolaunch/' target='_blank'>robolaunch</a> :rocket:.
+    i work as a cloud engineer at <a href='https://www.linkedin.com/company/robolaunch/' target='_blank'>robolaunch</a> :rocket:.
   </p>
   <br/>
   
@@ -25,8 +25,8 @@ contact:
   - title: github
     url: https://github.com/tunahanertekin
   - title: linkedin
-    url: https://www.linkedin.com/in/tunahan-ertekin-3a5476181
-  - title: twitter
-    url: https://twitter.com/tunomeister
+    url: https://www.linkedin.com/in/tunahanertekin/
+  # - title: twitter
+  #   url: https://twitter.com/tunomeister
   - title: email
     url: mailto:tunahan.ertekin13@gmail.com
